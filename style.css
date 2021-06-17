@@ -1,0 +1,320 @@
+/* global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.7;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+:focus {
+  outline-width: 0;
+}
+
+/* ----------------------------- */
+
+.navbar {
+  background-color: black;
+  padding: 3rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar .container {
+  display: flex;
+  max-width: 150rem;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  color: white;
+  font-size: 2rem;
+}
+
+.navbar .links a {
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 2.5rem;
+  font-weight: 600;
+}
+
+.navbar .links a:hover {
+  color: #e4ba48;
+  transition: 0.3s ease-in-out;
+}
+
+/* Dynamic class */
+.navbar .links .active {
+  background: #e4ba48;
+  padding: 2rem 4rem;
+  color: black;
+  border-radius: 0.5rem;
+  transition: 0.3s ease-in;
+}
+
+.change {
+    background: white !important;
+    transition: 0.2s ease-in-out;
+    color: black;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.change .logo {
+    color: black;
+}
+
+.change .links a {
+    color: black;
+}
+
+.navbar .links .active:hover {
+  color: white;
+}
+
+/* ---------------------------------- */
+
+.sections .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------------------ */
+
+.sections #one {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(245, 246, 252, 0.432),
+      rgba(8, 6, 8, 0.788)
+    ),
+    url("/img/Physics-and-business.jpg");
+  height: 105vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sections #one h1 {
+  color: white;
+  font-size: 9rem;
+}
+
+.sections #one h4 {
+  color: #e4ba48;
+  font-size: 3rem;
+  font-weight: 600;
+  width: 70%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sections #one p {
+  font-size: 1.7rem;
+  width: 45%;
+  text-align: center;
+  color: #e6e6e6;
+  margin-bottom: 4rem;
+}
+
+.sections #one button {
+  padding: 2rem 4rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.sections #one button:hover {
+  background: rgb(214, 214, 214);
+  transition: 0.3s ease-in-out;
+}
+
+/* ------------------------ */
+
+.sections #two  {
+    margin-top: 10vh;
+    height: 70vh;
+    visibility: hidden;
+  opacity: 0;
+  transition: 0.4s ease-in;
+}
+
+.sections #two h1 {
+    font-size: 6rem;
+    margin-bottom: 4rem;
+}
+
+.sections #two .group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 150rem;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sections #two .group img {
+    margin-right: 5rem;
+}
+
+.sections #two .group .about-text h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #e4ba48;
+}
+
+.sections #two .group .about-text p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+/* ------------------------- */
+
+
+.sections #three {
+    margin-top: 10vh;
+    height: 75vh;
+    background: black;
+    visibility: hidden;
+  opacity: 0;
+  transition: 0.4s ease-in;
+}
+
+.sections #three h1 {
+    font-size: 6rem;
+    margin-bottom: 4rem;
+    color: white;
+    padding-top: 10rem;
+}
+
+.sections #three .group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 150rem;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sections #three .group img {
+    margin-right: 5rem;
+    height: 48rem;
+}
+
+.sections #three .group .business-text h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #e4ba48;
+}
+
+.sections #three .group .business-text p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+/* --------------------------- */
+
+.sections #four {
+    height: 80vh;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(245, 246, 252, 0.178),
+      rgba(8, 6, 8, 0.897)
+    ),
+    url("/img/ey-businesspeople-working-at-office-with-glass-partition-dividing-them-ConvertImage.jpg");
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s ease-in;
+}
+
+.sections #four .container {
+    background: rgba(0, 0, 0, 0.541);
+    height: 70rem;
+}
+
+.sections #four h1 {
+    font-size: 6rem;
+    color: white;
+}
+
+.sections #four p {
+    color: rgb(218, 218, 218);
+    font-size: 1.8rem;
+    width: 60%;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.sections #four form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sections #four form input {
+    padding: 1.5rem;
+    width: 70rem;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: .5rem;
+    font-size: 2rem;
+}
+
+.sections #four button {
+    padding: 2rem 4rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    cursor: pointer;
+    background: #e4ba48;
+   
+}
+
+.sections #four button:hover {
+    background: #cea841;
+    transition: 0.3s ease-in-out;
+}
+
+/* Dynamic class */
+.visible {
+    visibility: visible !important;
+    opacity: 1 !important;
+    transition: 0.4s ease-in !important;
+}
